@@ -1,12 +1,13 @@
 {
   "name": "firestore-rulez",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "license": "MIT",
   "description": "Combines multiple *.rules files into one single firestore.rules file.",
   "main": "src/index.js",
   "scripts": {
     "start": "cd src && node index.js",
-    "publishToNpm": "npm run compile && npm publish"
+    "publishToNpm": "npm publish",
+    "test": "cd test && node ../src/index.js"
   },
   "author": "Pascal Luther",
   "repository": "https://github.com/lupas/firestore-rulez",
@@ -18,8 +19,11 @@
     "access": "public"
   },
   "dependencies": {
+    "chalk": "^4.1.0",
     "concat": "^1.0.3",
-    "glob": "^7.1.6"
+    "figlet": "^1.5.0",
+    "glob": "^7.1.6",
+    "yup": "^0.29.3"
   },
   "bin": {
     "firestore-rulez": "./src/index.js"
